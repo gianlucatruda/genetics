@@ -1,5 +1,5 @@
 # Gianluca Truda
-# 23 Feb 2016
+# 25 Feb 2016
 
 name = input("Enter file name: ")
 file = open(name, 'r', encoding = 'utf-8')
@@ -20,5 +20,6 @@ print("\n\n",
       "T:",counts['T'], ":", round(counts['T']*100/total, 2),"%", "\n\n", 
       "Total:", total)
 
-print("Pyrimidines:", counts['C']+ counts['T'])
-print("Purines:", counts['A']+ counts['G'])
+print("Pyrimidines:\t", counts['C']+ counts['T'])
+print("Purines:\t", counts['A']+ counts['G'])
+print("pyr/pur:\t",round((counts['C']+counts['T'])/(counts['A']+ counts['G']),3)) 
