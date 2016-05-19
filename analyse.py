@@ -1,7 +1,13 @@
 # Gianluca Truda
 # 25 Feb 2016
 
-name = input("Enter file name: ")
+import sys
+
+#if sys.argv[0]:	
+name = sys.argv[0]
+#else:
+#	name = input("Enter filename: ")
+
 file = open(name, 'r', encoding = 'utf-8')
 
 inStr = file.read()
